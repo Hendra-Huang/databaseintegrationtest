@@ -6,8 +6,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/soverdrive/anygo/src/testcollections/databaseintegrationtest/database"
-	"github.com/soverdrive/anygo/src/testcollections/databaseintegrationtest/testingutil"
+	"github.com/Hendra-Huang/databaseintegrationtest/database"
+	"github.com/Hendra-Huang/databaseintegrationtest/testingutil"
 )
 
 func TestGetBooks(t *testing.T) {

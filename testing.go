@@ -10,7 +10,7 @@ import (
 
 	"database/sql"
 
-	"github.com/soverdrive/anygo/src/testcollections/databaseintegrationtest/testingutil" // helper function for testing
+	"github.com/Hendra-Huang/databaseintegrationtest/testingutil" // helper function for testing
 )
 
 // list of regexp pattern for adding schema to the query

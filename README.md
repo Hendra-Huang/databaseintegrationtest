@@ -1,8 +1,11 @@
 This is a sample of parallel database integration test
 
 The main idea is separating data for every function test. In this example, the database is PostgreSQL and the data is separated by schema.
+
 testingutil package contains helper function for printing error.
+
 database package contains function for creating a test-database connection.
+
 testdata folder contains dummy data for testing.
 
 To run the test:

@@ -11,6 +11,7 @@ type Book struct {
 }
 
 var getBooksQuery = `SELECT * FROM book`
+var insertBookQuery = `INSERT INTO book VALUES ($1, $2)`
 
 func GetBooks(ctx context.Context, db *sql.DB) ([]Book, error) {
 	rows, err := db.QueryContext(ctx, getBooksQuery)
@@ -30,4 +31,10 @@ func GetBooks(ctx context.Context, db *sql.DB) ([]Book, error) {
 	}
 
 	return books, nil
+}
+
+func InsertBook(ctx context.Context, db *sql.DB, title, author string) error {
+	_, err := db.ExecContext(ctx, insertBookQuery, title, author)
+
+	return err
 }
